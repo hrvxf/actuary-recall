@@ -1,0 +1,54 @@
+const STORE='actuary-recall-progress-v1';
+let cards=[];
+let view='home';
+let session=null;
+const app=document.querySelector('#app');
+
+const progress=()=>{try{return JSON.parse(localStorage.getItem(STORE))||{}}catch{return {}}};
+const save=(value)=>localStorage.setItem(STORE,JSON.stringify(value));
+const recordFor=(id)=>progress()[id]||{attempts:0,score:0,last:0,due:0};
+const mastery=(card)=>{const r=recordFor(card.id);return !r.attempts?'New':r.score<2?'Learning':r.score<4?'Developing':r.score<7?'Strong':'Mastered'};
+const masteryPercent=(card)=>Math.min(100,Math.round((recordFor(card.id).score/7)*100));
+const dueCards=()=>cards.filter(c=>recordFor(c.id).due<=Date.now()).sort((a,b)=>recordFor(a.id).score-recordFor(b.id).score);
+const totalMastery=()=>Math.round(cards.reduce((n,c)=>n+masteryPercent(c),0)/(cards.length||1));
+const escapeHtml=(s='')=>s.replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+const shuffle=(items)=>items.map(v=>[Math.random(),v]).sort((a,b)=>a[0]-b[0]).map(([,v])=>v);
+
+function setView(next){view=next;session=null;document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===next));render();app.focus();}
+
+function home(){
+  const due=dueCards().length;
+  const mastered=cards.filter(c=>mastery(c)==='Mastered').length;
+  return `<section class="hero"><p class="eyebrow">Today’s revision</p><h1>${due} acronyms<br>ready to recall.</h1><p>A focused session prioritising new and weaker material.</p><button class="primary" data-start="daily">Start daily session&nbsp; →</button></section>
+  <div class="stat-grid"><div class="stat"><strong>${totalMastery()}%</strong><span>overall mastery</span></div><div class="stat"><strong>${mastered}</strong><span>mastered</span></div><div class="stat"><strong>${cards.length}</strong><span>total acronyms</span></div></div>
+  <div class="section-head"><div><p class="eyebrow">Quick practice</p><h2>Choose your challenge</h2></div></div>
+  <div class="mode-grid">${modeCard('recall','◎','Recall points','See the acronym. Retrieve every point.')}${modeCard('reverse','↺','Name the acronym','See the topic. Recall its mnemonic.')}${modeCard('weak','⚑','Weakest first','Focus on material that needs attention.')}${modeCard('learn','◇','Learn mode','Reveal a new list one point at a time.')}${modeCard('sprint','ϟ','Exam sprint','Ten mixed, rapid-fire questions.')}</div>`;
+}
+function modeCard(mode,icon,title,copy){return `<button class="mode-card" data-start="${mode}"><span class="mode-icon">${icon}</span><strong>${title}</strong><span>${copy}</span></button>`}
+function practice(){return `<p class="eyebrow">Practice</p><h1>Train the recall,<br>not recognition.</h1><p class="muted">Choose how you want to retrieve the material. Each result shapes what comes up next.</p><div class="mode-grid">${modeCard('daily','◷','Daily session','Your scheduled mix of new and due cards.')}${modeCard('recall','◎','Recall points','Retrieve the complete list from its acronym.')}${modeCard('reverse','↺','Name the acronym','Work backwards from subject to mnemonic.')}${modeCard('weak','⚑','Weakest first','Target the lowest-confidence cards.')}${modeCard('learn','◇','Learn mode','Study lists progressively before testing.')}${modeCard('sprint','ϟ','Exam sprint','Ten mixed questions with no detours.')}</div>`}
+
+function library(){const cats=['All',...new Set(cards.map(c=>c.category))];return `<p class="eyebrow">Library</p><h1>All ${cards.length}<br>acronyms.</h1><input class="search" id="search" type="search" placeholder="Search acronym or topic…" aria-label="Search acronym library"><div class="filters">${cats.map((c,i)=>`<button class="filter ${i?'':'active'}" data-category="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join('')}</div><div id="libraryList" class="library-list">${libraryRows(cards)}</div>`}
+function libraryRows(list){return list.length?list.map(c=>`<button class="library-card" data-card="${c.id}"><span><strong>${escapeHtml(c.acronym)}</strong><small>${escapeHtml(c.topic)}</small>${c.review?'<small class="notice">Source wording needs review</small>':''}</span><span class="mastery">${mastery(c)} · ${masteryPercent(c)}%</span></button>`).join(''):'<div class="empty">No acronyms match that search.</div>'}
+
+function progressView(){const attempted=cards.filter(c=>recordFor(c.id).attempts);const weakest=[...cards].sort((a,b)=>recordFor(a.id).score-recordFor(b.id).score).slice(0,5);const cats=[...new Set(cards.map(c=>c.category))];return `<p class="eyebrow">Progress</p><h1>${totalMastery()}% overall<br>mastery.</h1><p class="muted">Based on recall quality and repeated successful reviews.</p><div class="stat-grid"><div class="stat"><strong>${attempted.length}</strong><span>studied</span></div><div class="stat"><strong>${cards.filter(c=>mastery(c)==='Strong'||mastery(c)==='Mastered').length}</strong><span>strong</span></div><div class="stat"><strong>${cards.reduce((n,c)=>n+recordFor(c.id).attempts,0)}</strong><span>attempts</span></div></div><div class="section-head"><h2>By topic</h2></div>${cats.map(cat=>{const set=cards.filter(c=>c.category===cat);const pct=Math.round(set.reduce((n,c)=>n+masteryPercent(c),0)/set.length);return `<div class="progress-row"><header><strong>${escapeHtml(cat)}</strong><small>${pct}%</small></header><div class="bar"><i style="width:${pct}%"></i></div></div>`}).join('')}<div class="section-head"><h2>Needs attention</h2></div>${weakest.map(c=>`<button class="library-card wide" data-card="${c.id}"><span><strong>${escapeHtml(c.acronym)}</strong><small>${escapeHtml(c.topic)}</small></span><span class="mastery">${mastery(c)}</span></button>`).join('')}`}
+
+function start(mode,onlyCard){
+  let pool=onlyCard?[onlyCard]:mode==='weak'?[...cards].sort((a,b)=>recordFor(a.id).score-recordFor(b.id).score).slice(0,10):mode==='daily'?dueCards().slice(0,10):shuffle(cards).slice(0,mode==='sprint'?10:10);
+  if(!pool.length)pool=shuffle(cards).slice(0,10);
+  session={mode:mode==='daily'?'recall':mode,cards:pool,index:0,revealed:false,pointCount:mode==='learn'?1:0,results:[]};renderStudy();
+}
+function renderStudy(){
+  if(session.index>=session.cards.length)return renderSummary();
+  const c=session.cards[session.index], reverse=session.mode==='reverse';
+  const shown=session.revealed||session.mode==='learn';
+  app.innerHTML=`<div class="study-head"><button class="back" data-exit aria-label="Leave session">←</button><div class="study-progress"><i style="width:${(session.index/session.cards.length)*100}%"></i></div><span class="counter">${session.index+1}/${session.cards.length}</span></div><div class="prompt"><p class="eyebrow">${reverse?'Name the acronym':session.mode==='learn'?'Learn the list':'Recall every point'}</p><p class="topic">${escapeHtml(c.topic)}</p><div class="acronym">${reverse&&!session.revealed?'? ? ?':escapeHtml(c.acronym)}</div></div><div class="recall-card ${shown?'':'concealed'}">${c.points.map((p,i)=>`<div class="point"><span class="letter">${reverse&&!session.revealed?'?':p.letter}</span><span class="point-text" style="${session.mode==='learn'&&i>=session.pointCount?'visibility:hidden':''}">${escapeHtml(p.text)}</span></div>`).join('')}</div>${c.review?'<div class="notice">Some wording in this source entry may need checking against the original notes.</div>':''}<div class="study-actions ${session.revealed?'ratings':''}">${session.mode==='learn'&&!session.revealed&&session.pointCount<c.points.length?'<button class="primary wide" data-next-point>Reveal next point</button>':!session.revealed?'<button class="primary wide" data-reveal>Reveal answer</button>':'<button class="rating" data-score="0">Missed</button><button class="rating" data-score="1">Nearly</button><button class="rating" data-score="2">Got it</button>'}</div>`;
+}
+function rate(score){const c=session.cards[session.index];const all=progress(),old=all[c.id]||{attempts:0,score:0};const gain=score===2?2:score===1?0.5:-1;const next=Math.max(0,Math.min(8,(old.score||0)+gain));const days=score===2?Math.max(1,Math.round(next)):score===1?1:0;all[c.id]={attempts:(old.attempts||0)+1,score:next,last:Date.now(),due:Date.now()+days*86400000};save(all);session.results.push(score);session.index++;session.revealed=false;session.pointCount=session.mode==='learn'?1:0;renderStudy()}
+function renderSummary(){const got=session.results.filter(x=>x===2).length;const nearly=session.results.filter(x=>x===1).length;const pct=Math.round(((got+nearly*.5)/(session.results.length||1))*100);app.innerHTML=`<div class="summary"><p class="eyebrow">Session complete</p><h1>Good retrieval<br>work.</h1><div class="summary-ring" style="--pct:${pct}%"><strong>${pct}%</strong></div><p class="muted">${got} recalled · ${nearly} nearly · ${session.results.length-got-nearly} missed</p><button class="primary wide" data-finish>Back to today</button></div>`}
+function render(){app.innerHTML=view==='home'?home():view==='practice'?practice():view==='library'?library():progressView()}
+
+document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.view)return setView(b.dataset.view);if(b.dataset.start)return start(b.dataset.start);if(b.dataset.reveal!==undefined){session.revealed=true;return renderStudy()}if(b.dataset.nextPoint!==undefined){session.pointCount++;return renderStudy()}if(b.dataset.score!==undefined)return rate(Number(b.dataset.score));if(b.dataset.exit!==undefined||b.dataset.finish!==undefined)return setView('home');if(b.dataset.card)return start('learn',cards.find(c=>c.id===b.dataset.card));if(b.dataset.category!==undefined){document.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x===b));filterLibrary()}if(b.id==='resetButton'&&confirm('Reset all saved practice progress on this device?')){localStorage.removeItem(STORE);render()}});
+document.addEventListener('input',e=>{if(e.target.id==='search')filterLibrary()});
+function filterLibrary(){const q=(document.querySelector('#search')?.value||'').toLowerCase(),cat=document.querySelector('.filter.active')?.dataset.category||'All';const list=cards.filter(c=>(cat==='All'||c.category===cat)&&(`${c.acronym} ${c.topic} ${c.points.map(p=>p.text).join(' ')}`).toLowerCase().includes(q));document.querySelector('#libraryList').innerHTML=libraryRows(list)}
+
+fetch('data.json').then(r=>r.json()).then(data=>{cards=data;render();if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js')}).catch(()=>{app.innerHTML='<div class="empty">The revision list could not be loaded. Please refresh and try again.</div>'});
