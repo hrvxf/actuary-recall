@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101828">
+  <meta name="description" content="Active recall practice for actuarial acronyms.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <title>Actuary Recall</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" data-view="home" aria-label="Go to Today"><span class="brand-mark">AR</span><span>Actuary Recall</span></button>
+      <button class="icon-btn" id="resetButton" aria-label="Reset practice progress" title="Reset progress">↻</button>
+    </header>
+
+    <main id="app" tabindex="-1"><div class="loading">Preparing your revision set…</div></main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button data-view="home" class="active"><span>⌂</span>Today</button>
+      <button data-view="practice"><span>◈</span>Practice</button>
+      <button data-view="library"><span>▤</span>Library</button>
+      <button data-view="progress"><span>◔</span>Progress</button>
+    </nav>
+  </div>
+  <script src="app.js" defer></script>
+</body>
+</html>
