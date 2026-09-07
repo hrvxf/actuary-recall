@@ -1,5 +1,5 @@
-const CACHE='actuary-recall-v3';
-const ASSETS=['./','./index.html','./styles.css','./app.js','./data.json','./manifest.webmanifest'];
+const CACHE='actuary-recall-v4';
+const ASSETS=['./','./index.html','./styles.css?v=4','./app.js?v=4','./data.json?v=4','./manifest.webmanifest'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS))));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key))))));
-self.addEventListener('fetch',event=>event.respondWith(caches.match(event.request).then(cached=>cached||fetch(event.request))));
+self.addEventListener('fetch',event=>{if(event.request.mode==='navigate'||['script','style'].includes(event.request.destination)){event.respondWith(fetch(event.request).then(response=>{const copy=response.clone();caches.open(CACHE).then(cache=>cache.put(event.request,copy));return response}).catch(()=>caches.match(event.request)));return}event.respondWith(caches.match(event.request).then(cached=>cached||fetch(event.request)))});
