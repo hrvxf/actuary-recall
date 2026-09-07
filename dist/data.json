@@ -1,0 +1,1465 @@
+[
+  {
+    "id": "card-1",
+    "topic": "External Environment",
+    "acronym": "CREATE GRAND LISTS",
+    "points": [
+      {
+        "letter": "C",
+        "text": "orporate structure"
+      },
+      {
+        "letter": "R",
+        "text": "egulations and legislation"
+      },
+      {
+        "letter": "E",
+        "text": "nvironmental issues and climate change"
+      },
+      {
+        "letter": "A",
+        "text": "ccounting standards"
+      },
+      {
+        "letter": "T",
+        "text": "ax"
+      },
+      {
+        "letter": "E",
+        "text": "conomic outlook"
+      },
+      {
+        "letter": "G",
+        "text": "overnance"
+      },
+      {
+        "letter": "R",
+        "text": "isk management requirements"
+      },
+      {
+        "letter": "A",
+        "text": "dequacy of capital and solvency"
+      },
+      {
+        "letter": "N",
+        "text": "ew business environment"
+      },
+      {
+        "letter": "D",
+        "text": "emographic trends"
+      },
+      {
+        "letter": "L",
+        "text": "ifestyle considerations"
+      },
+      {
+        "letter": "I",
+        "text": "nternational practice"
+      },
+      {
+        "letter": "S",
+        "text": "tate benefits"
+      },
+      {
+        "letter": "T",
+        "text": "echnology"
+      },
+      {
+        "letter": "S",
+        "text": "ocial and cultural trends"
+      }
+    ],
+    "category": "Regulation & environment",
+    "review": false
+  },
+  {
+    "id": "card-2",
+    "topic": "Aims of a regulator",
+    "acronym": "GRIP",
+    "points": [
+      {
+        "letter": "G",
+        "text": "ive confidence in the system"
+      },
+      {
+        "letter": "R",
+        "text": "educe financial crime"
+      },
+      {
+        "letter": "I",
+        "text": "nefficiencies in the market corrected"
+      },
+      {
+        "letter": "P",
+        "text": "rotect consumers"
+      }
+    ],
+    "category": "Regulation & environment",
+    "review": false
+  },
+  {
+    "id": "card-3",
+    "topic": "Functions of a regulator",
+    "acronym": "SERVICE",
+    "points": [
+      {
+        "letter": "S",
+        "text": "etting Sanctions"
+      },
+      {
+        "letter": "E",
+        "text": "nforcing regulations"
+      },
+      {
+        "letter": "R",
+        "text": "eviewing and influencing government policy"
+      },
+      {
+        "letter": "V",
+        "text": "etting and registering firms and individuals"
+      },
+      {
+        "letter": "I",
+        "text": "nvestigating breaches"
+      },
+      {
+        "letter": "C",
+        "text": "hecking prudent management and conduct of providers"
+      },
+      {
+        "letter": "E",
+        "text": "ducating consumers and the public"
+      }
+    ],
+    "category": "Regulation & environment",
+    "review": false
+  },
+  {
+    "id": "card-4",
+    "topic": "Life Insurance Products",
+    "acronym": "WEL RIDD",
+    "points": [
+      {
+        "letter": "W",
+        "text": "hole of Life Insurance"
+      },
+      {
+        "letter": "E",
+        "text": "ndowment Assurance"
+      },
+      {
+        "letter": "L",
+        "text": "evel Term Assurance"
+      },
+      {
+        "letter": "R",
+        "text": "enewable / Convertible Term Assurance"
+      },
+      {
+        "letter": "I",
+        "text": "mmediate Annuity"
+      },
+      {
+        "letter": "D",
+        "text": "eferred Annuity"
+      },
+      {
+        "letter": "D",
+        "text": "ecreasing Term Assurance"
+      }
+    ],
+    "category": "Products & contracts",
+    "review": false
+  },
+  {
+    "id": "card-5",
+    "topic": "Features of General Assets",
+    "acronym": "SYSTEM T",
+    "points": [
+      {
+        "letter": "S",
+        "text": "ecurity (default risk)"
+      },
+      {
+        "letter": "Y",
+        "text": "ield (real / nominal, expected return)"
+      },
+      {
+        "letter": "S",
+        "text": "pread"
+      },
+      {
+        "letter": "T",
+        "text": "erm"
+      },
+      {
+        "letter": "E",
+        "text": "xpenses / exchange rate"
+      },
+      {
+        "letter": "M",
+        "text": "arketability"
+      },
+      {
+        "letter": "T",
+        "text": "ax"
+      }
+    ],
+    "category": "Investments & assets",
+    "review": false
+  },
+  {
+    "id": "card-6",
+    "topic": "Features of the investor",
+    "acronym": "TRAITOR",
+    "points": [
+      {
+        "letter": "T",
+        "text": "ax position"
+      },
+      {
+        "letter": "R",
+        "text": "egulation on investor"
+      },
+      {
+        "letter": "A",
+        "text": "ssets currently held"
+      },
+      {
+        "letter": "I",
+        "text": "ncome / cashflow considerations"
+      },
+      {
+        "letter": "T",
+        "text": "astes (liabilities, education, fashion)"
+      },
+      {
+        "letter": "O",
+        "text": "ther assets and investors"
+      },
+      {
+        "letter": "R",
+        "text": "isk appetite"
+      }
+    ],
+    "category": "Investments & assets",
+    "review": false
+  },
+  {
+    "id": "card-7",
+    "topic": "Reasons for holding cash",
+    "acronym": "POURS GRID",
+    "points": [
+      {
+        "letter": "P",
+        "text": "rotect monetary values"
+      },
+      {
+        "letter": "O",
+        "text": "pportunities"
+      },
+      {
+        "letter": "U",
+        "text": "ncertain liabilities"
+      },
+      {
+        "letter": "R",
+        "text": "ecently received cashflows"
+      },
+      {
+        "letter": "S",
+        "text": "hort-term liabilities"
+      },
+      {
+        "letter": "G",
+        "text": "eneral economic uncertainty"
+      },
+      {
+        "letter": "R",
+        "text": "ecession expected"
+      },
+      {
+        "letter": "I",
+        "text": "nterest rates expected to rise"
+      },
+      {
+        "letter": "D",
+        "text": "epreciation of domestic currency"
+      }
+    ],
+    "category": "Investments & assets",
+    "review": false
+  },
+  {
+    "id": "card-8",
+    "topic": "Yield Curve Theories",
+    "acronym": "LIME",
+    "points": [
+      {
+        "letter": "L",
+        "text": "iquidity preference"
+      },
+      {
+        "letter": "I",
+        "text": "nflation risk premium"
+      },
+      {
+        "letter": "M",
+        "text": "arket segmentation"
+      },
+      {
+        "letter": "E",
+        "text": "xpectations"
+      }
+    ],
+    "category": "Investments & assets",
+    "review": false
+  },
+  {
+    "id": "card-9",
+    "topic": "Prime Property Feature",
+    "acronym": "CALL ST",
+    "points": [
+      {
+        "letter": "C",
+        "text": "omparable properties for rent review / valuations"
+      },
+      {
+        "letter": "A",
+        "text": "ge / condition / flexibility of usage"
+      },
+      {
+        "letter": "L",
+        "text": "ocation"
+      },
+      {
+        "letter": "L",
+        "text": "ease structure"
+      },
+      {
+        "letter": "S",
+        "text": "ize"
+      },
+      {
+        "letter": "T",
+        "text": "enant quality"
+      }
+    ],
+    "category": "Investments & assets",
+    "review": false
+  },
+  {
+    "id": "card-10",
+    "topic": "Overseas Investments & Emerging Markets",
+    "acronym": "MTV CATERPILLAR",
+    "points": [
+      {
+        "letter": "M",
+        "text": "ismatching domestic liabilities"
+      },
+      {
+        "letter": "T",
+        "text": "ax (may not be able to recover withholding taxes paid)"
+      },
+      {
+        "letter": "V",
+        "text": "olatility of currency"
+      },
+      {
+        "letter": "C",
+        "text": "ustodian Needed"
+      },
+      {
+        "letter": "A",
+        "text": "dditional Admin required"
+      },
+      {
+        "letter": "T",
+        "text": "ime delays"
+      },
+      {
+        "letter": "E",
+        "text": "xpenses incurred / expertise needed"
+      },
+      {
+        "letter": "R",
+        "text": "egulation quality poorer"
+      },
+      {
+        "letter": "P",
+        "text": "olitical problems"
+      },
+      {
+        "letter": "I",
+        "text": "nformation harder to obtain"
+      },
+      {
+        "letter": "L",
+        "text": "anguage barriers"
+      },
+      {
+        "letter": "L",
+        "text": "iquidity problems"
+      },
+      {
+        "letter": "A",
+        "text": "ccounting differences"
+      },
+      {
+        "letter": "R",
+        "text": "estrictions on foreign ownership of assets / repatriation problems"
+      }
+    ],
+    "category": "Investments & assets",
+    "review": false
+  },
+  {
+    "id": "card-11",
+    "topic": "Ways of Valuing Assets",
+    "acronym": "SHAM FADS",
+    "points": [
+      {
+        "letter": "S",
+        "text": "moothed market value"
+      },
+      {
+        "letter": "H",
+        "text": "istoric book value"
+      },
+      {
+        "letter": "A",
+        "text": "djusted book value"
+      },
+      {
+        "letter": "M",
+        "text": "arket Value"
+      },
+      {
+        "letter": "F",
+        "text": "air value"
+      },
+      {
+        "letter": "A",
+        "text": "rbitrage value"
+      },
+      {
+        "letter": "D",
+        "text": "iscounted cashflow"
+      },
+      {
+        "letter": "S",
+        "text": "tochastic modelling"
+      }
+    ],
+    "category": "Investments & assets",
+    "review": false
+  },
+  {
+    "id": "card-12",
+    "topic": "Factors affecting investment strategy",
+    "acronym": "A SAD CUTER INVESTOR",
+    "points": [
+      {
+        "letter": "A",
+        "text": "ccounting regulation"
+      },
+      {
+        "letter": "S",
+        "text": "ize of assets (absolute / relative)"
+      },
+      {
+        "letter": "A",
+        "text": "ccrual of future liabilities"
+      },
+      {
+        "letter": "D",
+        "text": "iversification"
+      },
+      {
+        "letter": "C",
+        "text": "urrency of the liabilities"
+      },
+      {
+        "letter": "U",
+        "text": "ncertainty of the liabilities"
+      },
+      {
+        "letter": "T",
+        "text": "ax treatment of the assets / investor"
+      },
+      {
+        "letter": "E",
+        "text": "nvironmental / social / governance issues"
+      },
+      {
+        "letter": "R",
+        "text": "isk appetite"
+      },
+      {
+        "letter": "I",
+        "text": "nstitution’s objectives"
+      },
+      {
+        "letter": "N",
+        "text": "ature of the liabilities"
+      },
+      {
+        "letter": "V",
+        "text": "oluntary and legal restrictions"
+      },
+      {
+        "letter": "E",
+        "text": "xisting assets"
+      },
+      {
+        "letter": "S",
+        "text": "olvency requirements"
+      },
+      {
+        "letter": "T",
+        "text": "erm of the liabilities"
+      },
+      {
+        "letter": "O",
+        "text": "ther funds’ strategies (competition)"
+      },
+      {
+        "letter": "R",
+        "text": "eturns (expected long term)"
+      }
+    ],
+    "category": "Investments & assets",
+    "review": false
+  },
+  {
+    "id": "card-13",
+    "topic": "Regulatory influences on assets held",
+    "acronym": "TECH SCAM",
+    "points": [
+      {
+        "letter": "T",
+        "text": "ypes of assets can invest in"
+      },
+      {
+        "letter": "E",
+        "text": "xtent of mismatching allowed"
+      },
+      {
+        "letter": "C",
+        "text": "urrency matching requirements"
+      },
+      {
+        "letter": "H",
+        "text": "old certain assets, e.g. Government bonds"
+      },
+      {
+        "letter": "S",
+        "text": "ingle counterparty maximum exposure"
+      },
+      {
+        "letter": "C",
+        "text": "ustodianship of assets"
+      },
+      {
+        "letter": "A",
+        "text": "mount of any one asset used to demonstrate solvency"
+      },
+      {
+        "letter": "M",
+        "text": "ismatching reserve"
+      }
+    ],
+    "category": "Regulation & environment",
+    "review": false
+  },
+  {
+    "id": "card-14",
+    "topic": "Model design: operational issues",
+    "acronym": "SCARCER FILES",
+    "points": [
+      {
+        "letter": "S",
+        "text": "imple but retains key features"
+      },
+      {
+        "letter": "C",
+        "text": "lear results"
+      },
+      {
+        "letter": "A",
+        "text": "dequately documented"
+      },
+      {
+        "letter": "R",
+        "text": "ange of implementation methods"
+      },
+      {
+        "letter": "C",
+        "text": "ommunicable workings and outputs"
+      },
+      {
+        "letter": "E",
+        "text": "asy to understand"
+      },
+      {
+        "letter": "R",
+        "text": "efinable and developable"
+      },
+      {
+        "letter": "F",
+        "text": "requency of cash flows - balance accuracy vs practicality"
+      },
+      {
+        "letter": "I",
+        "text": "ndependent verification of outputs"
+      },
+      {
+        "letter": "L",
+        "text": "ength of run not too long"
+      },
+      {
+        "letter": "E",
+        "text": "xpense not too high"
+      },
+      {
+        "letter": "S",
+        "text": "ensible joint behaviour variables"
+      }
+    ],
+    "category": "Models, data & assumptions",
+    "review": false
+  },
+  {
+    "id": "card-15",
+    "topic": "Considerations in assessing different models",
+    "acronym": "FENCED",
+    "points": [
+      {
+        "letter": "F",
+        "text": "it for purpose"
+      },
+      {
+        "letter": "E",
+        "text": "xpertise available in house"
+      },
+      {
+        "letter": "N",
+        "text": "eed flexibility"
+      },
+      {
+        "letter": "C",
+        "text": "ost of each option"
+      },
+      {
+        "letter": "E",
+        "text": "xpected number of times used"
+      },
+      {
+        "letter": "D",
+        "text": "esired accuracy"
+      }
+    ],
+    "category": "Models, data & assumptions",
+    "review": false
+  },
+  {
+    "id": "card-16",
+    "topic": "Sources of data",
+    "acronym": "TRAINERS",
+    "points": [
+      {
+        "letter": "T",
+        "text": "ables, e.g. Actuarial mortality tables"
+      },
+      {
+        "letter": "R",
+        "text": "einsurers"
+      },
+      {
+        "letter": "A",
+        "text": "broad (data from overseas contracts)"
+      },
+      {
+        "letter": "I",
+        "text": "ndustry data"
+      },
+      {
+        "letter": "N",
+        "text": "ational Statistics"
+      },
+      {
+        "letter": "E",
+        "text": "xperience investigations on the existing contract"
+      },
+      {
+        "letter": "R",
+        "text": "egulatory reports and company accounts"
+      },
+      {
+        "letter": "S",
+        "text": "imilar contracts"
+      }
+    ],
+    "category": "Models, data & assumptions",
+    "review": false
+  },
+  {
+    "id": "card-17",
+    "topic": "Potential issues when using data",
+    "acronym": "QUERIED",
+    "points": [
+      {
+        "letter": "Q",
+        "text": "uantity (credibility)"
+      },
+      {
+        "letter": "U",
+        "text": "p to date?"
+      },
+      {
+        "letter": "E",
+        "text": "rrors"
+      },
+      {
+        "letter": "R",
+        "text": "elevance (heterogeneity)"
+      },
+      {
+        "letter": "I",
+        "text": "ncomplete?"
+      },
+      {
+        "letter": "E",
+        "text": "xceptionals / outliers"
+      },
+      {
+        "letter": "D",
+        "text": "etail and format"
+      }
+    ],
+    "category": "Models, data & assumptions",
+    "review": false
+  },
+  {
+    "id": "card-18",
+    "topic": "Factors to consider when setting assumptions",
+    "acronym": "LUNCH",
+    "points": [
+      {
+        "letter": "L",
+        "text": "egislation / regulation"
+      },
+      {
+        "letter": "U",
+        "text": "se of the assumptions"
+      },
+      {
+        "letter": "N",
+        "text": "eeds of the client"
+      },
+      {
+        "letter": "C",
+        "text": "onsistency between assumptions"
+      },
+      {
+        "letter": "H",
+        "text": "ow financially significant are the assumptions"
+      }
+    ],
+    "category": "Models, data & assumptions",
+    "review": false
+  },
+  {
+    "id": "card-19",
+    "topic": "Using past data to set future assumptions",
+    "acronym": "BEST ARCHER",
+    "points": [
+      {
+        "letter": "B",
+        "text": "alance of homogeneous groups underlying the data may have changed"
+      },
+      {
+        "letter": "E",
+        "text": "conomic situation may have changed"
+      },
+      {
+        "letter": "S",
+        "text": "ocial conditions may have changed"
+      },
+      {
+        "letter": "T",
+        "text": "rends overtime, e.g. Medical, demographic"
+      },
+      {
+        "letter": "A",
+        "text": "bnormal fluctuations"
+      },
+      {
+        "letter": "R",
+        "text": "andom fluctuations"
+      },
+      {
+        "letter": "C",
+        "text": "hanges in regulation"
+      },
+      {
+        "letter": "H",
+        "text": "eterogeneity within the group to which the assumptions will apply"
+      },
+      {
+        "letter": "E",
+        "text": "rrors in data"
+      },
+      {
+        "letter": "R",
+        "text": "ecording differences (e.g. In categorisation of smoker)"
+      }
+    ],
+    "category": "Models, data & assumptions",
+    "review": true
+  },
+  {
+    "id": "card-20",
+    "topic": "Types of Selection",
+    "acronym": "STATIC",
+    "points": [
+      {
+        "letter": "S",
+        "text": "purious"
+      },
+      {
+        "letter": "T",
+        "text": "ime"
+      },
+      {
+        "letter": "A",
+        "text": "dverse"
+      },
+      {
+        "letter": "T",
+        "text": "emporary…"
+      },
+      {
+        "letter": "I",
+        "text": "nitial"
+      },
+      {
+        "letter": "C",
+        "text": "lass"
+      }
+    ],
+    "category": "Models, data & assumptions",
+    "review": false
+  },
+  {
+    "id": "card-21",
+    "topic": "Contract design factors",
+    "acronym": "AMPLE DIRECT FACTORS",
+    "points": [
+      {
+        "letter": "A",
+        "text": "dministration systems"
+      },
+      {
+        "letter": "M",
+        "text": "arketability"
+      },
+      {
+        "letter": "P",
+        "text": "rofitability"
+      },
+      {
+        "letter": "L",
+        "text": "evel and form of benefits"
+      },
+      {
+        "letter": "E",
+        "text": "arly leaver benefits"
+      },
+      {
+        "letter": "D",
+        "text": "iscretionary benefits"
+      },
+      {
+        "letter": "I",
+        "text": "nterests and needs of customers"
+      },
+      {
+        "letter": "R",
+        "text": "isk appetite of the parties involved"
+      },
+      {
+        "letter": "E",
+        "text": "xpenses versus charges"
+      },
+      {
+        "letter": "C",
+        "text": "ompetition"
+      },
+      {
+        "letter": "T",
+        "text": "erms and conditions of contract"
+      },
+      {
+        "letter": "F",
+        "text": "inancing (capital requirements)"
+      },
+      {
+        "letter": "A",
+        "text": "ccounting implications"
+      },
+      {
+        "letter": "C",
+        "text": "onsistency with other products"
+      },
+      {
+        "letter": "T",
+        "text": "iming of contributions or premiums"
+      },
+      {
+        "letter": "O",
+        "text": "ptions and guarantees"
+      },
+      {
+        "letter": "R",
+        "text": "egulatory requirements"
+      },
+      {
+        "letter": "S",
+        "text": "ubsidies and cross subsidies"
+      }
+    ],
+    "category": "Products & contracts",
+    "review": false
+  },
+  {
+    "id": "card-22",
+    "topic": "Expenses incurred by a product provider",
+    "acronym": "COST RAID",
+    "points": [
+      {
+        "letter": "C",
+        "text": "ommission"
+      },
+      {
+        "letter": "O",
+        "text": "verheads"
+      },
+      {
+        "letter": "S",
+        "text": "ales / advertising"
+      },
+      {
+        "letter": "T",
+        "text": "erminal, e.g. Paying benefits"
+      },
+      {
+        "letter": "R",
+        "text": "enewal administration, e.g. Collecting premiums / contributions"
+      },
+      {
+        "letter": "A",
+        "text": "sset management"
+      },
+      {
+        "letter": "I",
+        "text": "nitial administration, e.g. setting up new client records"
+      },
+      {
+        "letter": "D",
+        "text": "esign of the contract"
+      }
+    ],
+    "category": "Products & contracts",
+    "review": false
+  },
+  {
+    "id": "card-23",
+    "topic": "Benefits of a good risk management process",
+    "acronym": "SAVIOURS",
+    "points": [
+      {
+        "letter": "S",
+        "text": "trategic decision making improved"
+      },
+      {
+        "letter": "A",
+        "text": "void surprises"
+      },
+      {
+        "letter": "V",
+        "text": "olatility of profits reduced"
+      },
+      {
+        "letter": "I",
+        "text": "mprove profits via capital efficiency"
+      },
+      {
+        "letter": "O",
+        "text": "pportunities exploited for profit"
+      },
+      {
+        "letter": "U",
+        "text": "nderstand interdependencies"
+      },
+      {
+        "letter": "R",
+        "text": "eact quickly to emerging risks"
+      },
+      {
+        "letter": "S",
+        "text": "takeholders giving confidence"
+      }
+    ],
+    "category": "Risk & insurance",
+    "review": false
+  },
+  {
+    "id": "card-24",
+    "topic": "Identification of causes of risk in projects",
+    "acronym": "Preston North End FC Plays Brilliantly",
+    "points": [
+      {
+        "letter": "P",
+        "text": "olitical risks, e.g. Political developments"
+      },
+      {
+        "letter": "N",
+        "text": "atural risks, e.g. Storm, earthquake, climate change"
+      },
+      {
+        "letter": "E",
+        "text": "conomic risks, e.g. Interest rate or currency movements"
+      },
+      {
+        "letter": "F",
+        "text": "inancial risks, e.g. Incorrect cashflow estimates, refinancing issues"
+      },
+      {
+        "letter": "C",
+        "text": "rime, e.g. Fraud"
+      },
+      {
+        "letter": "P",
+        "text": "roject risks, e.g. Insufficiently defined objectives, over time or over budget"
+      },
+      {
+        "letter": "B",
+        "text": "usiness risk, e.g. Loss of key personnel, insolvency of a contractor, competition"
+      }
+    ],
+    "category": "Risk & insurance",
+    "review": false
+  },
+  {
+    "id": "card-25",
+    "topic": "Inappropriate advice",
+    "acronym": "CRIMES",
+    "points": [
+      {
+        "letter": "C",
+        "text": "omplicated products"
+      },
+      {
+        "letter": "R",
+        "text": "ubbish or incompetent advisor"
+      },
+      {
+        "letter": "I",
+        "text": "ntegrity of advisor lacking, e.g. Due to sales related payments"
+      },
+      {
+        "letter": "M",
+        "text": "odel or parameters unsuitable"
+      },
+      {
+        "letter": "E",
+        "text": "rrors in data relating to beneficiaries"
+      },
+      {
+        "letter": "S",
+        "text": "tate related but inappropriate actions"
+      }
+    ],
+    "category": "Risk & insurance",
+    "review": false
+  },
+  {
+    "id": "card-26",
+    "topic": "Additional criteria for an insurable risk",
+    "acronym": "MUDPIS",
+    "points": [
+      {
+        "letter": "M",
+        "text": "oral hazard illuminated as far as possible"
+      },
+      {
+        "letter": "U",
+        "text": "ltimate limit on liability undertaken"
+      },
+      {
+        "letter": "D",
+        "text": "ata exists with which to price risk"
+      },
+      {
+        "letter": "P",
+        "text": "ooling a large number of similar risks"
+      },
+      {
+        "letter": "I",
+        "text": "ndependent risk events"
+      },
+      {
+        "letter": "S",
+        "text": "mall probability of occurrence"
+      }
+    ],
+    "category": "Risk & insurance",
+    "review": true
+  },
+  {
+    "id": "card-27",
+    "topic": "Risk Responses",
+    "acronym": "PIRATE",
+    "points": [
+      {
+        "letter": "P",
+        "text": "artially transfer"
+      },
+      {
+        "letter": "I",
+        "text": "gnore"
+      },
+      {
+        "letter": "R",
+        "text": "educe"
+      },
+      {
+        "letter": "A",
+        "text": "ccept or retain all"
+      },
+      {
+        "letter": "T",
+        "text": "ransfer"
+      },
+      {
+        "letter": "E",
+        "text": "vade"
+      }
+    ],
+    "category": "Risk & insurance",
+    "review": false
+  },
+  {
+    "id": "card-28",
+    "topic": "Reasons for using re insurance",
+    "acronym": "SAD LIFE",
+    "points": [
+      {
+        "letter": "S",
+        "text": "mooth results"
+      },
+      {
+        "letter": "A",
+        "text": "void large losses"
+      },
+      {
+        "letter": "D",
+        "text": "iversification"
+      },
+      {
+        "letter": "L",
+        "text": "imit exposure to risk (single event, accumulation)"
+      },
+      {
+        "letter": "I",
+        "text": "ncrease capacity to accept risk"
+      },
+      {
+        "letter": "F",
+        "text": "inancial assistance"
+      },
+      {
+        "letter": "E",
+        "text": "xpertise"
+      }
+    ],
+    "category": "Risk & insurance",
+    "review": false
+  },
+  {
+    "id": "card-29",
+    "topic": "Reasons for underwriting",
+    "acronym": "SAFARI",
+    "points": [
+      {
+        "letter": "S",
+        "text": "uitable special terms"
+      },
+      {
+        "letter": "A",
+        "text": "void anti-selection"
+      },
+      {
+        "letter": "F",
+        "text": "inancial underwriting against over-insurance"
+      },
+      {
+        "letter": "A",
+        "text": "ctual experience in line with that assumed in the pricing basis"
+      },
+      {
+        "letter": "R",
+        "text": "isk classification / rated fairly"
+      },
+      {
+        "letter": "I",
+        "text": "dentify substandard lives"
+      }
+    ],
+    "category": "Risk & insurance",
+    "review": false
+  },
+  {
+    "id": "card-30",
+    "topic": "Reasons For Calculating Provisions",
+    "acronym": "BAD MEDICS",
+    "points": [
+      {
+        "letter": "B",
+        "text": "enefit improvements for a benefit scheme"
+      },
+      {
+        "letter": "A",
+        "text": "ccounts and reports, published and internal"
+      },
+      {
+        "letter": "D",
+        "text": "iscontinuance / surrender benefits"
+      },
+      {
+        "letter": "M",
+        "text": "ergers and acquisitions"
+      },
+      {
+        "letter": "E",
+        "text": "xcessive a over l and so whether discretionary benefits can be awarded"
+      },
+      {
+        "letter": "D",
+        "text": "isclosure information for beneficiaries"
+      },
+      {
+        "letter": "I",
+        "text": "nvestment strategy"
+      },
+      {
+        "letter": "C",
+        "text": "ontribution / premium setting"
+      },
+      {
+        "letter": "S",
+        "text": "tatutory solvency reports"
+      }
+    ],
+    "category": "Capital, provisions & disclosure",
+    "review": true
+  },
+  {
+    "id": "card-31",
+    "topic": "Information to be disclosed to benefit scheme members",
+    "acronym": "SCRIBE",
+    "points": [
+      {
+        "letter": "S",
+        "text": "trategy for investment"
+      },
+      {
+        "letter": "C",
+        "text": "ontribution obligations"
+      },
+      {
+        "letter": "R",
+        "text": "isks involved"
+      },
+      {
+        "letter": "I",
+        "text": "nsolvency entitlement"
+      },
+      {
+        "letter": "B",
+        "text": "enefit entitlements"
+      },
+      {
+        "letter": "E",
+        "text": "xpense charges"
+      }
+    ],
+    "category": "Capital, provisions & disclosure",
+    "review": false
+  },
+  {
+    "id": "card-32",
+    "topic": "When benefits scheme information should be disclosed",
+    "acronym": "PRICE",
+    "points": [
+      {
+        "letter": "P",
+        "text": "ayment commencement"
+      },
+      {
+        "letter": "R",
+        "text": "equest"
+      },
+      {
+        "letter": "I",
+        "text": "ntervals"
+      },
+      {
+        "letter": "C",
+        "text": "ombination"
+      },
+      {
+        "letter": "E",
+        "text": "ntry"
+      }
+    ],
+    "category": "Capital, provisions & disclosure",
+    "review": false
+  },
+  {
+    "id": "card-33",
+    "topic": "Reasons why disclosure is important",
+    "acronym": "SIMMERS",
+    "points": [
+      {
+        "letter": "S",
+        "text": "ponsor is aware of financial significance of benefits"
+      },
+      {
+        "letter": "I",
+        "text": "nformed decisions can be made"
+      },
+      {
+        "letter": "M",
+        "text": "is-selling is avoided"
+      },
+      {
+        "letter": "M",
+        "text": "anages the expectation of members"
+      },
+      {
+        "letter": "E",
+        "text": "ncourages take up"
+      },
+      {
+        "letter": "R",
+        "text": "egulatory requirements"
+      },
+      {
+        "letter": "S",
+        "text": "ecurity of scheme improved as sponsor or trustees made more accountable"
+      }
+    ],
+    "category": "Capital, provisions & disclosure",
+    "review": false
+  },
+  {
+    "id": "card-34",
+    "topic": "Why financial providers need capital",
+    "acronym": "REG CUSHION",
+    "points": [
+      {
+        "letter": "R",
+        "text": "egulatory requirements to demonstrate solvency"
+      },
+      {
+        "letter": "E",
+        "text": "xpenses of launching a new product or starting a new operation"
+      },
+      {
+        "letter": "G",
+        "text": "uarantees can be offered"
+      },
+      {
+        "letter": "C",
+        "text": "ash flow timing management"
+      },
+      {
+        "letter": "U",
+        "text": "nexpected events cushioned, e.g. Adverse experience, fines"
+      },
+      {
+        "letter": "S",
+        "text": "mooth profit"
+      },
+      {
+        "letter": "H",
+        "text": "elp demonstrate financial strength / attracting NB / obtain good credit rating"
+      },
+      {
+        "letter": "I",
+        "text": "nvestment freedom to mismatch in pursuit of higher returns"
+      },
+      {
+        "letter": "O",
+        "text": "pportunities, e.g. Mergers and acquisitions"
+      },
+      {
+        "letter": "N",
+        "text": "ew Business Strain financing"
+      }
+    ],
+    "category": "Capital, provisions & disclosure",
+    "review": false
+  },
+  {
+    "id": "card-35",
+    "topic": "Reasons for analysing surplus",
+    "acronym": "DIVERGENCE",
+    "points": [
+      {
+        "letter": "D",
+        "text": "ivergence of actual versus expected"
+      },
+      {
+        "letter": "I",
+        "text": "nformation to management and for accounts"
+      },
+      {
+        "letter": "V",
+        "text": "ariances of whole equals sum of variances of parts"
+      },
+      {
+        "letter": "E",
+        "text": "xperience monitoring to feedback into acc"
+      },
+      {
+        "letter": "R",
+        "text": "econcile values for successive years"
+      },
+      {
+        "letter": "G",
+        "text": "roup into one off or recurring sources of surplus"
+      },
+      {
+        "letter": "E",
+        "text": "xecutive renumeration schemes"
+      },
+      {
+        "letter": "N",
+        "text": "ew business strain"
+      },
+      {
+        "letter": "C",
+        "text": "heck on valuation assumptions and calculations"
+      },
+      {
+        "letter": "E",
+        "text": "xtra check on valuation data and process"
+      }
+    ],
+    "category": "Capital, provisions & disclosure",
+    "review": true
+  }
+]
